@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+  }
+  body{
+    background-image: url('{% static "home.jpg" %}');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: #FFC0CB;
+  }
+</style>
+<body>
+  {% include "exam/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-center">
+    <h2 class="display-3 text-info">Online Examination System(MCQ BASED)</h2>
+    <p class="display-4 d-none d-sm-block">Her you can attend your examinations online!</p>
+    <p class="lead">Sign Up to write your first online examination</p>
+
+  
+    <p><strong> Please signup here</strong></p>
+    <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px; border-radius: 0%;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sign Up as a Student</a>
+    
+    <br><br><br>
+  </div>  
+</section>
+  {% include "exam/footer.html" %}
+
+
+</body>
+
+</html>

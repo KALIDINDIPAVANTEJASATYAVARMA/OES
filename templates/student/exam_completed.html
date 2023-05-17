@@ -1,0 +1,5 @@
+{% extends 'student/studentbase.html' %}
+{% block content %}
+  <h1>{{ course.course_name }} has been completed already</h1>
+  <p>The {{ course.course_name }} exam was completed at {{ course.end_time }}.You should have come early.</p>
+{% endblock %}
